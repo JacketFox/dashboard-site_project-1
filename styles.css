@@ -1,0 +1,88 @@
+:root {
+    --background: #faf4c5;
+    --background-light: #FDFAE8;
+    --text: #2b2320;
+    --accent: #d9636f;
+    --accent-light: #E8A1A8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(
+        to left,
+        var(--background) 0%,
+        var(--background-light) 90%
+
+    );
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+        to left,
+        var(--accent) 0%,
+        var(--accent-light) 90%
+    );
+    height: 8vh;
+    box-shadow: 3px 3px 6px var(--accent-light);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+#hero-text-wrap {
+    border: 2px solid var(--accent-light);
+    border-radius: 15px;
+    background: linear-gradient(
+        45deg,
+        var(--accent) 0%,
+        var(--accent-light) 90%
+    );
+    box-shadow: 3px 3px 6px var(--accent-light);
+    padding: 10px;
+}
+
+#projects {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    gap: 1em;
+    margin: 1em;
+}
+
+.project {
+    background: linear-gradient(
+        45deg,
+        var(--accent) 0%,
+        var(--accent-light) 90%
+    );
+    border: 2px solid var(--accent-light);
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px var(--accent-light);
+    padding: 10px;
+}
