@@ -86,3 +86,15 @@ nav {
     box-shadow: 3px 3px 6px var(--accent-light);
     padding: 10px;
 }
+
+@media (max-width: 768px) {
+    #projects {
+    grid-template-columns: 1fr 1fr;
+};
+}
+
+@media (max-width: 480px) {
+    #projects {
+    grid-template-columns: 1fr;
+};
+}
