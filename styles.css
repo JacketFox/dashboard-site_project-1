@@ -7,6 +7,9 @@
     --footer-background:#F1C6CA;
     --footer-accent: #FAEAEC;
     --link-color:#025A2E;
+    --link-hover-color: whitesmoke;
+    --link-visited-color: #1398A8;
+    --link-focus-visible-color: #5D02B8;
 }
 
 * {
@@ -123,20 +126,21 @@ a {
     color: var(--link-color);
 }
 
+a:visited {
+    color: var(--link-visited-color);
+}
+
 a:hover {
-    color: whitesmoke;
+    color: var(--link-hover-color);
 }
 
 a:active {
     color: var(--accent-light);
 }
 
-a:visited {
-    color: #26FD91;
-}
-
 a:focus-visible {
-    background-color: #5D02B8;
+    background-color: var(--link-focus-visible-color);
+    color: var(--link-hover-color);
 }
 
 @media (max-width: 768px) {
