@@ -6,7 +6,7 @@
     --accent-light: #E8A1A8;
     --footer-background:#F1C6CA;
     --footer-accent: #FAEAEC;
-    --link-color:#370E39;
+    --link-color:#025A2E;
 }
 
 * {
@@ -121,6 +121,22 @@ footer > section:last-child {
 a {
     text-decoration: none;
     color: var(--link-color);
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+a:active {
+    color: var(--accent-light);
+}
+
+a:visited {
+    color: #26FD91;
+}
+
+a:focus-visible {
+    background-color: #5D02B8;
 }
 
 @media (max-width: 768px) {
