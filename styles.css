@@ -4,8 +4,9 @@
     --text: #2b2320;
     --accent: #d9636f;
     --accent-light: #E8A1A8;
-    --footer-background: #992630;
-    --footer-accent: #5E171E;
+    --footer-background:#F1C6CA;
+    --footer-accent: #FAEAEC;
+    --link-color:#370E39;
 }
 
 * {
@@ -18,6 +19,7 @@ body {
     background: linear-gradient(to left,
             var(--background) 0%,
             var(--background-light) 90%);
+            color: var(--text);
 }
 
 header {
@@ -114,6 +116,11 @@ footer > section:last-child {
     box-shadow: 4px 4px 8px var(--accent-light);
     font-size: 1.2em;
     scroll-margin-top: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
 }
 
 @media (max-width: 768px) {
